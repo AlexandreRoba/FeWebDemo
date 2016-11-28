@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeWebDemo.Library", "FeWebDemo.Library\FeWebDemo.Library.csproj", "{8F99A77D-9700-4E4F-AC58-33041CA8B456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeWebDemo.Library.Test", "FeWebDemo.Library.Test\FeWebDemo.Library.Test.csproj", "{31D11EB0-9FE9-4B76-9355-0EF4D4EEDB2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeWebDemo.Android", "FeWebDemo.Android\FeWebDemo.Android.csproj", "{AA603DD5-C0DF-4B5D-80B2-8B038AF0B951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeWebDemo.Android.Library", "FeWebDemo.Android.Library\FeWebDemo.Android.Library.csproj", "{D4FE8C62-F9D9-46A9-A9E6-7DC67CBA94FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F99A77D-9700-4E4F-AC58-33041CA8B456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F99A77D-9700-4E4F-AC58-33041CA8B456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F99A77D-9700-4E4F-AC58-33041CA8B456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F99A77D-9700-4E4F-AC58-33041CA8B456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D11EB0-9FE9-4B76-9355-0EF4D4EEDB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D11EB0-9FE9-4B76-9355-0EF4D4EEDB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D11EB0-9FE9-4B76-9355-0EF4D4EEDB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D11EB0-9FE9-4B76-9355-0EF4D4EEDB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA603DD5-C0DF-4B5D-80B2-8B038AF0B951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA603DD5-C0DF-4B5D-80B2-8B038AF0B951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA603DD5-C0DF-4B5D-80B2-8B038AF0B951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA603DD5-C0DF-4B5D-80B2-8B038AF0B951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4FE8C62-F9D9-46A9-A9E6-7DC67CBA94FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4FE8C62-F9D9-46A9-A9E6-7DC67CBA94FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4FE8C62-F9D9-46A9-A9E6-7DC67CBA94FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4FE8C62-F9D9-46A9-A9E6-7DC67CBA94FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

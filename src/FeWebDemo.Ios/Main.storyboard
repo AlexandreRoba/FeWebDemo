@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8" translatesAutoresizingMaskIntoConstraints="NO" image="Background">
+                                <rect key="frame" x="80" y="325" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                                <rect key="frame" x="179" y="118" width="42" height="21"/>
+                                <nil key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="97" y="129" width="213.5" height="36"/>
+                                </variation>
+                                <attributedString key="attributedText">
+                                    <fragment content="FEWEB Demo">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="32"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                                <rect key="frame" x="179" y="202" width="42" height="21"/>
+                                <nil key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="165" y="182" width="78" height="22"/>
+                                </variation>
+                                <attributedString key="attributedText">
+                                    <fragment content="Version :">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                            <font key="NSFont" name="ArialMT" family="Arial" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="24" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                                <rect key="frame" x="268" y="182" width="42" height="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="266" y="182" width="44.5" height="22.5"/>
+                                </variation>
+                                <attributedString key="attributedText">
+                                    <fragment content="1.0.0">
+                                        <attributes>
+                                            <font key="NSFont" name="ArialMT" family="Arial" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="11"/>
+                                <exclude reference="12"/>
+                                <exclude reference="13"/>
+                                <exclude reference="14"/>
+                                <exclude reference="39"/>
+                                <exclude reference="40"/>
+                                <exclude reference="41"/>
+                                <exclude reference="42"/>
+                                <exclude reference="43"/>
+                                <exclude reference="44"/>
+                            </mask>
+                            <mask key="subviews">
+                                <exclude reference="24"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8"/>
+                                <include reference="9"/>
+                                <include reference="10"/>
+                                <include reference="24"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="11"/>
+                                <include reference="12"/>
+                                <include reference="13"/>
+                                <include reference="14"/>
+                                <include reference="39"/>
+                                <include reference="40"/>
+                                <include reference="41"/>
+                                <include reference="42"/>
+                                <include reference="43"/>
+                                <include reference="44"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="11" firstItem="8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing"/>
+                            <constraint id="12" firstItem="8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
+                            <constraint id="13" firstItem="8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="14" firstItem="8" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom"/>
+                            <constraint id="39" firstItem="9" firstAttribute="top" secondItem="8" secondAttribute="top" constant="129"/>
+                            <constraint id="40" firstItem="9" firstAttribute="trailing" secondItem="8" secondAttribute="centerX" constant="103"/>
+                            <constraint id="41" firstItem="24" firstAttribute="trailing" secondItem="9" secondAttribute="trailing"/>
+                            <constraint id="42" firstItem="24" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="17"/>
+                            <constraint id="43" firstItem="24" firstAttribute="leading" secondItem="10" secondAttribute="trailing" constant="23"/>
+                            <constraint id="44" firstItem="10" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="17"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblVersion" destination="24" id="name-outlet-24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina55"/>
+    </simulatedMetricsContainer>
+</document>
