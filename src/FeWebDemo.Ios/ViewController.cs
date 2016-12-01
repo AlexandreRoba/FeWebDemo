@@ -18,7 +18,9 @@ namespace FeWebDemo.Ios
 			base.ViewDidLoad();
 			// Perform any additional setup after loading the view, typically from a nib.
 			_systemInformationService = App.Container.Get<ISystemInformationService>();
+			lblVersionText.TextColor = UIColor.White;
 			lblVersion.Text = _systemInformationService.GetSystemVersionNumber();
+			lblVersion.TextColor = UIColor.White;
 		}
 
 		public override void DidReceiveMemoryWarning()

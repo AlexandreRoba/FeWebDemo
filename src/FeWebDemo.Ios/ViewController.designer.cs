@@ -18,11 +18,20 @@ namespace FeWebDemo.Ios
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblVersion { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblVersionText { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (lblVersion != null) {
                 lblVersion.Dispose ();
                 lblVersion = null;
+            }
+
+            if (lblVersionText != null) {
+                lblVersionText.Dispose ();
+                lblVersionText = null;
             }
         }
     }

@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -23,54 +23,59 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9" translatesAutoresizingMaskIntoConstraints="NO" text="Hello I'm the IOS Application!" numberOfLines="0">
                                 <rect key="frame" x="179" y="118" width="42" height="21"/>
-                                <nil key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="97" y="129" width="213.5" height="36"/>
+                                    <rect key="frame" x="43" y="267" width="343" height="136"/>
+                                    <mask key="constraints">
+                                        <include reference="52"/>
+                                        <include reference="53"/>
+                                        <include reference="54"/>
+                                    </mask>
                                 </variation>
-                                <attributedString key="attributedText">
-                                    <fragment content="FEWEB Demo">
-                                        <attributes>
-                                            <color key="NSColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="32"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="system" pointSize="32" weight="heavy"/>
+                                <constraints>
+                                    <constraint id="52" firstItem="9" firstAttribute="height" constant="136"/>
+                                    <constraint id="53" firstItem="9" firstAttribute="height" constant="136"/>
+                                    <constraint id="54" firstItem="9" firstAttribute="width" constant="343"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="52"/>
+                                        <exclude reference="53"/>
+                                        <exclude reference="54"/>
+                                    </mask>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10" translatesAutoresizingMaskIntoConstraints="NO" text="Version">
                                 <rect key="frame" x="179" y="202" width="42" height="21"/>
                                 <nil key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="165" y="182" width="78" height="22"/>
+                                    <rect key="frame" x="169.5" y="663.5" width="69" height="24"/>
                                 </variation>
-                                <attributedString key="attributedText">
-                                    <fragment content="Version :">
-                                        <attributes>
-                                            <color key="NSColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
-                                            <font key="NSFont" name="ArialMT" family="Arial" size="20"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="24" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="24" translatesAutoresizingMaskIntoConstraints="NO" text="1.0.0">
                                 <rect key="frame" x="268" y="182" width="42" height="21"/>
-                                <nil key="textColor"/>
+                                <nil key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="266" y="182" width="44.5" height="22.5"/>
+                                    <rect key="frame" x="170" y="696" width="68" height="22"/>
+                                    <mask key="constraints">
+                                        <include reference="61"/>
+                                    </mask>
                                 </variation>
-                                <attributedString key="attributedText">
-                                    <fragment content="1.0.0">
-                                        <attributes>
-                                            <font key="NSFont" name="ArialMT" family="Arial" size="20"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <constraints>
+                                    <constraint id="61" firstItem="24" firstAttribute="width" constant="68"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="61"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <variation key="default">
@@ -79,12 +84,12 @@
                                 <exclude reference="12"/>
                                 <exclude reference="13"/>
                                 <exclude reference="14"/>
-                                <exclude reference="39"/>
-                                <exclude reference="40"/>
-                                <exclude reference="41"/>
-                                <exclude reference="42"/>
-                                <exclude reference="43"/>
-                                <exclude reference="44"/>
+                                <exclude reference="50"/>
+                                <exclude reference="51"/>
+                                <exclude reference="60"/>
+                                <exclude reference="62"/>
+                                <exclude reference="63"/>
+                                <exclude reference="64"/>
                             </mask>
                             <mask key="subviews">
                                 <exclude reference="24"/>
@@ -102,12 +107,12 @@
                                 <include reference="12"/>
                                 <include reference="13"/>
                                 <include reference="14"/>
-                                <include reference="39"/>
-                                <include reference="40"/>
-                                <include reference="41"/>
-                                <include reference="42"/>
-                                <include reference="43"/>
-                                <include reference="44"/>
+                                <include reference="50"/>
+                                <include reference="51"/>
+                                <include reference="60"/>
+                                <include reference="62"/>
+                                <include reference="63"/>
+                                <include reference="64"/>
                             </mask>
                         </variation>
                         <constraints>
@@ -115,16 +120,17 @@
                             <constraint id="12" firstItem="8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top"/>
                             <constraint id="13" firstItem="8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
                             <constraint id="14" firstItem="8" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom"/>
-                            <constraint id="39" firstItem="9" firstAttribute="top" secondItem="8" secondAttribute="top" constant="129"/>
-                            <constraint id="40" firstItem="9" firstAttribute="trailing" secondItem="8" secondAttribute="centerX" constant="103"/>
-                            <constraint id="41" firstItem="24" firstAttribute="trailing" secondItem="9" secondAttribute="trailing"/>
-                            <constraint id="42" firstItem="24" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="17"/>
-                            <constraint id="43" firstItem="24" firstAttribute="leading" secondItem="10" secondAttribute="trailing" constant="23"/>
-                            <constraint id="44" firstItem="10" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="17"/>
+                            <constraint id="50" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="9" secondAttribute="centerY" constant="33"/>
+                            <constraint id="51" firstItem="9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7"/>
+                            <constraint id="60" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="10" secondAttribute="centerX" constant="3"/>
+                            <constraint id="62" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="24" secondAttribute="bottom" constant="18"/>
+                            <constraint id="63" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="24" secondAttribute="centerX" constant="3"/>
+                            <constraint id="64" firstItem="24" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lblVersion" destination="24" id="name-outlet-24"/>
+                        <outlet property="lblVersionText" destination="10" id="name-outlet-10"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
