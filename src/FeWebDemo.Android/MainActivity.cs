@@ -1,14 +1,14 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Ninject;
+using FeWebDemo.Library;
 
 namespace FeWebDemo.Android
 {
 	[Activity(Label = "FeWebDemo.Android", MainLauncher = true, Icon = "@mipmap/icon", Theme="@android:style/Theme.NoTitleBar")]
 	public class MainActivity : Activity
 	{
-		//int count = 1;
-
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -17,11 +17,11 @@ namespace FeWebDemo.Android
 			// Set our view from the "main" layout resource
 			SetContentView(Resource.Layout.Main);
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			//Button button = FindViewById<Button>(Resource.Id.myButton);
+			ISystemInformationService _systemInformationService = App.Container.Get<ISystemInformationService>();
 
-			//button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+			TextView lblVersionNumber = FindViewById<TextView>(Resource.Id.lblVersionNumber);
+
+			lblVersionNumber.Text = _systemInformationService.GetSystemVersionNumber();
 		}
 	}
 }

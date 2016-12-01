@@ -1,5 +1,4 @@
-﻿using System;
-using Android.Content;
+﻿using Android.Content;
 using Android.Content.PM;
 using FeWebDemo.Library;
 
@@ -17,13 +16,13 @@ namespace FeWebDemo.Android.Library
 		public string GetBuildNumber()
 		{
 			PackageInfo pInfo = _context.PackageManager.GetPackageInfo(_context.PackageName,0);
-			return pInfo.VersionName;
+			return pInfo.VersionCode.ToString();
 		}
 
 		public string GetVersionNumber()
 		{
 			PackageInfo pInfo = _context.PackageManager.GetPackageInfo(_context.PackageName, 0);
-			return pInfo.VersionCode.ToString();
+			return pInfo.VersionName;
 		}
 	}
 }
