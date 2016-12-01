@@ -41,3 +41,5 @@ Thumbs.db
 
 # Ide Settings
 .idea/
+
+.bitrise*

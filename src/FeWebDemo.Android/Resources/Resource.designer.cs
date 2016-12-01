@@ -61,6 +61,28 @@ namespace FeWebDemo.Android
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int lblHelloMessage = 2131099648;
+			
+			// aapt resource value: 0x7f060002
+			public const int lblVersionNumber = 2131099650;
+			
+			// aapt resource value: 0x7f060001
+			public const int lblVersionTitle = 2131099649;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
