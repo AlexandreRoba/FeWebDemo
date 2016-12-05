@@ -6,8 +6,6 @@
 	<string>FeWebDemo</string>
 	<key>CFBundleIdentifier</key>
 	<string>be.feweb.demo.fewebdemo</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -35,5 +33,7 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleVersion</key>
 	<string>0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
 </dict>
 </plist>
