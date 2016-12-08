@@ -7,7 +7,7 @@ namespace FeWebDemo.Ios
 {
 	public partial class ViewController : UIViewController
 	{
-		private ISystemInformationService _systemInformationService;
+		private ISystemInformationService _systemInformationService = App.Container.Get<ISystemInformationService>();
 		protected ViewController(IntPtr handle) : base(handle)
 		{
 			// Note: this .ctor should not contain any initialization logic.
@@ -17,10 +17,13 @@ namespace FeWebDemo.Ios
 		{
 			base.ViewDidLoad();
 			// Perform any additional setup after loading the view, typically from a nib.
-			_systemInformationService = App.Container.Get<ISystemInformationService>();
+
 			lblVersionText.TextColor = UIColor.White;
-			lblVersion.Text = _systemInformationService.GetSystemVersionNumber();
 			lblVersion.TextColor = UIColor.White;
+
+
+			lblVersion.Text = _systemInformationService.GetSystemVersionNumber();
+
 		}
 
 		public override void DidReceiveMemoryWarning()
